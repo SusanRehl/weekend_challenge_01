@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/javascript.js" charset="utf-8"></script>
+    <title>Employee Salary Worksheet</title>
+  </head>
+  <body>
+    <h1>Employee Salary Worksheet</h1>
+    <h2>Step 1: Enter Information for Each Employee:</h2>
+    <p>First Name: <input type="text" required id="firstNameIn" value="">  Last Name: <input type="text" id="lastNameIn" value="" required></p>
+    <p>Employee ID Number: <input type="number" id="empIdIn" value="" required></p>
+    <p>Job Title: <input type="text" id="jobTitleIn" value="" required></p>
+    <p>Annual Salary: <input type="number" id="annualSalaryIn" value="" required></p>
+    <button type="button" name="submitButton" onclick="createEmployee();">Submit</button>
+
+    <h3>Employee Information Submitted:</h3>
+    <div id="outputEmp"></div>
+
+    <h2>Step 2: Calculate Monthly Salary Total Cost:  <button type="button" name="monthSalButton" onclick="listMonthSalCost();">Calculate</button></h2>
+    <div id="outputSal"></div>
+
+    <h2>Step 3: Delete An Employee (if needed):</h2>
+    <p>Employee ID Number: <input type="number" id="deleteEmpIdIn" value="">   <button type="button" name="deleteEmpButton" onclick="delEmp();">Submit</button>
+    <div id="message"></div>
+
+  </body>
+</html>
